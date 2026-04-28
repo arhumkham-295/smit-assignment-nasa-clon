@@ -92,110 +92,141 @@ input{
     background-color: red;
 }
 
-@media (max-width: 992px){
+
+/* ===== TABLET (max-width: 900px) ===== */
+@media (max-width: 900px){
 
     .nasamainnavbar{
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         height: auto;
-        padding: 15px;
-        gap: 12px;
+        align-items: center;
+        padding: 15px 10px;
+        gap: 15px;
     }
 
-    /* LOGO CENTER */
+    /* logo center top */
     .nasalogo{
+        margin: 0;
+        display: flex;
+        justify-content: center;
         width: 100%;
-        text-align: center;
-        order: 1;
     }
 
     .nasalogo img{
         height: 60px;
     }
 
-    /* NAV OPTIONS CENTER ROW */
-    .navbar1maindiv,
+    /* first section */
+    .navbar1maindiv{
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    /* options grid style */
     .mainexplorediv2{
         width: 100%;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        gap: 12px;
-        order: 2;
-    }
-
-    select{
-        font-size: 15px;
-    }
-
-    /* SEARCH CENTER */
-    .searchbar{
-        width: 100%;
-        display: flex;
         justify-content: center;
-        order: 3;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
     }
 
-    .searchbar input{
-        width: 70%;
-    }
-}
-@media (max-width: 576px){
-
-    .nasamainnavbar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 10px;
-        gap: 10px;
-        overflow-x: hidden; /* 🔥 MAIN FIX */
-    }
-
-    /* LOGO CENTER */
-    .nasalogo{
-        order: 1;
-        width: 100%;
+    /* 2 items per row (clean tablet look) */
+    .explorediv1,
+    .explorediv{
+        width: 45%;
         text-align: center;
     }
 
-    .nasalogo img{
-        height: 50px;
-    }
-
-    /* 🔥 FIXED: NO WIDTH ISSUES */
-    .navbar1maindiv,
-    .mainexplorediv2{
-        order: 2;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    /* 🔥 IMPORTANT FIX (REMOVE OVERFLOW CAUSE) */
     select{
-        width: calc(50% - 10px);  /* ✔ PERFECT FIT */
-        font-size: 14px;
-        box-sizing: border-box;
+        width: 100%;
+        font-size: 15px;
     }
 
-    /* SEARCH */
+    /* search center below */
     .searchbar{
-        order: 3;
+        width: 70%;
+        padding: 0;
+    }
+
+    input{
         width: 100%;
+        height: 26px;
+        font-size: 14px;
+    }
+
+    /* live center */
+    .nasalive{
+        justify-content: center;
+        width: 45%;
+    }
+
+    .nasahead{
+        font-size: 16px;
+    }
+
+    .livepara{
+        font-size: 12px;
+        width: 32px;
+        height: 18px;
+    }
+    .nasalive{
+        display: none;
+    }
+}
+/* ===== MOBILE (max-width: 600px) ===== */
+@media (max-width: 600px){
+
+    .nasamainnavbar{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    /* logo top center */
+    .nasalogo{
+        order: -1;
+        margin: 10px 0;
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 
-    .searchbar input{
-        width: 90%;
-        height: 35px;
-        box-sizing: border-box;
+    /* hide search + live */
+    .searchbar{
+        display: none;
     }
 
     .nasalive{
         display: none;
+    }
+
+    /* all options in one line */
+    .navbar1maindiv,
+    .mainexplorediv2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;   /* ek hi line */
+        gap: 6px;            /* 5–9px gap */
+        margin: 0;
+        padding: 0;
+    }
+
+    .explorediv,
+    .explorediv1{
+        width: auto;
+        padding-top: 5px;
+    }
+
+    select{
+        width: auto;
+        font-size: 14px;
     }
 }
