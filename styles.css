@@ -92,141 +92,307 @@ input{
     background-color: red;
 }
 
+@media only screen and  (min-width: 480px) and (max-width: 1024px) {
+    .nasamainnavbar {
+        padding: 0 10px;
+        height: 75px;
+    }
 
-/* ===== TABLET (max-width: 900px) ===== */
-@media (max-width: 900px){
+    .navbar1maindiv {
+        width: 250px; 
+        gap: 10px;
+    }
 
-    .nasamainnavbar{
-        flex-direction: column;
-        height: auto;
+    .searchbar {
+        padding-left: 10px; 
+    }
+
+    input {
+        width: 120px; 
+    }
+
+    .nasalogo {
+        margin-left: 0;
+        width: 60px;
+    }
+
+    .nasalogo img {
+        height: 55px;
+    }
+
+    .mainexplorediv2 {
+        margin-right: 0;
+        gap: 5px; 
+    }
+
+    .explorediv1 {
+        width: 70px;
+        margin-right: 20px;
+    }
+
+    select {
+        font-size: 10px; 
+        width: 90px;
+    }
+
+    .nasahead {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and   (max-width: 605px) {
+
+    .nasamainnavbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    
+    .searchbar {
+        display: none;
+    }
+
+    
+    .mainexplorediv2 {
+        display: none;
+    }
+
+    
+    .navbar1maindiv {
+        width: auto;
+        padding-top: 0;
+        display: flex;
         align-items: center;
-        padding: 15px 10px;
-        gap: 15px;
     }
 
-    /* logo center top */
-    .nasalogo{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    select {
+        width: 110px;
+        font-size: 18px;
     }
 
-    .nasalogo img{
-        height: 60px;
+    
+    .nasalogo {
+        width: auto;
+        margin-left: 0;
     }
 
-    /* first section */
-    .navbar1maindiv{
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-        padding: 0;
+    .nasalogo img {
+        height: 50px;
     }
 
-    /* options grid style */
-    .mainexplorediv2{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        margin: 0;
-        padding: 0;
+}
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(./heroimage.png) no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 60px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.humanshead{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.btn-crew {
+    display: inline-block;
+    background-color: #e03a3e; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.btn-crew:hover {
+    background-color: #c02a2e;
+}
+.mainlinediv{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+.line1{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 230px;
+
+}
+.line2{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 230px;
+
+}
+.line3{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 230px;
+
+}
+.hero-links {
+    display: flex;
+    gap: 100px;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.3); */
+    padding-top: 20px;
+}
+
+.link-item span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.link-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+}
+
+.arrow {
+    background: #e03a3e;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: 200px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.arrow img{
+    background: #e03a3e;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.controls {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.profile-pic img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.pause-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-section {
+        padding: 40px;
     }
 
-    /* 2 items per row (clean tablet look) */
-    .explorediv1,
-    .explorediv{
-        width: 45%;
-        text-align: center;
+    .humanshead {
+        font-size: 60px; 
     }
 
-    select{
-        width: 100%;
-        font-size: 15px;
+    .hero-links {
+        gap: 30px; 
     }
 
-    /* search center below */
-    .searchbar{
-        width: 70%;
-        padding: 0;
+    .line1, .line2, .line3 {
+        width: 30%; 
     }
-
-    input{
-        width: 100%;
-        height: 26px;
-        font-size: 14px;
-    }
-
-    /* live center */
-    .nasalive{
-        justify-content: center;
-        width: 45%;
-    }
-
-    .nasahead{
-        font-size: 16px;
-    }
-
-    .livepara{
-        font-size: 12px;
-        width: 32px;
-        height: 18px;
-    }
-    .nasalive{
+    .controls {
         display: none;
     }
 }
-/* ===== MOBILE (max-width: 600px) ===== */
-@media (max-width: 600px){
 
-    .nasamainnavbar{
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        padding: 10px 5px;
-    }
 
-    /* logo top center */
-    .nasalogo{
-        order: -1;
-        margin: 10px 0;
-        display: flex;
+@media only screen and (max-width: 605px) {
+    .hero-section {
+        padding: 20px;
+        align-items: center; 
         justify-content: center;
-        width: 100%;
     }
 
-    /* hide search + live */
-    .searchbar{
+    .humanshead {
+        font-size: 40px; 
+        text-align: center;
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-crew {
+        display: block; 
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto 40px auto;
+        width: fit-content;
+    }
+
+
+    .mainlinediv {
+        display: none; 
+    }
+
+    .hero-links {
+        flex-direction: column; 
+        gap: 20px;
+        text-align: center;
+    }
+
+    .link-item a {
+        justify-content: center; 
+        font-size: 16px;
+    }
+    .controls {
         display: none;
-    }
-
-    .nasalive{
-        display: none;
-    }
-
-    /* all options in one line */
-    .navbar1maindiv,
-    .mainexplorediv2{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;   /* ek hi line */
-        gap: 6px;            /* 5–9px gap */
-        margin: 0;
-        padding: 0;
-    }
-
-    .explorediv,
-    .explorediv1{
-        width: auto;
-        padding-top: 5px;
-    }
-
-    select{
-        width: auto;
-        font-size: 14px;
     }
 }
