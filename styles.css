@@ -1089,17 +1089,17 @@ h2 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-@media (max-width: 1335px) {
+@media only screen and  (max-width: 1335px) {
     .morenasacontainer {
-        width: 95%; /* Tablet par thori width kam/adjust ki */
+        width: 95%; 
     }
     .title {
         font-size: 32px;
     }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .gallery-grid {
-        flex-direction: column; /* Mobile par cards ek ke neeche ek aayenge */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -1113,7 +1113,6 @@ h2 {
         text-align: center;
     }
 
-    /* Mobile par image height thori kam kar di taake screen par fit aaye */
     .main-img {
         height: 180px;
     }
@@ -1189,7 +1188,7 @@ h2 {
     height: 15px;
 }
 
-@media (max-width: 1335px) {
+@media only screen and (max-width: 1335px) {
     .mainexp-universediv {
         padding: 80px 40px; 
         height: auto;        
@@ -1202,7 +1201,7 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .mainexp-universediv {
         padding: 50px 20px;
         height: auto;        
@@ -1233,5 +1232,136 @@ h2 {
     
     body {
         overflow-x: hidden;
+    }
+}
+.nasa-promo-section {
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.nasa-container {
+    max-width: 1200px;
+    display: flex;
+    gap: 60px; 
+    align-items: flex-start;
+}
+
+
+.content-side {
+    flex: 1.2;
+}
+
+.top-tag {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.sub-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.learn-more a {
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow {
+    background-color: #e03a3e; 
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+.image-side {
+    flex: 1;
+}
+
+.promo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    font-size: 15px;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 1335px) {
+    .nasa-promo-section {
+        padding: 40px 5%;
+    }
+
+    .nasa-container {
+        gap: 30px; 
+    }
+
+    .main-heading {
+        font-size: 36px; 
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nasa-promo-section {
+        padding: 30px 15px; 
+    }
+
+    .nasa-container {
+        flex-direction: column; 
+        gap: 40px;
+        align-items: center; 
+    }
+
+    .content-side, .image-side {
+        width: 100%; 
+        flex: unset; 
+    }
+
+    .main-heading {
+        font-size: 30px; /
+        margin-bottom: 20px;
+    }
+
+    .sub-heading {
+        font-size: 16px;
+    }
+
+    .main-description {
+        font-size: 15px;
+    }
+
+    .image-side {
+        margin-top: 10px;
     }
 }
