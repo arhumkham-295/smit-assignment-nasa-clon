@@ -1121,3 +1121,117 @@ h2 {
         height: calc(90px - 2px);
     }
 }
+.mainexp-universediv{
+    /* border: 2px solid; */
+    width: 100%;
+    height: 520px;
+    background-image: url('./image23.webp');
+     margin-top: 80px;
+     padding: 130px 80px;
+}
+.exp-universeheadpara{
+    /* border: 2px solid green; */
+    width: 500px;
+    height: 300px;
+    
+}
+.exp-universehead1{
+    /* border: 2px solid blue; */
+    width: 380px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.exp-universehead2{
+    /* border: 2px solid blue; */
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.exp-universepara{
+    /* border: 2px solid blue; */
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 8px;
+}
+.exp-universepara a{
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: underline dotted;
+}
+.exp-singupandarrow{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid blue; */
+    margin-top: 40px;
+    color: #ffffff;
+    width: 150px;
+    cursor: pointer;
+    
+}
+.expsinguphead{
+    /* border: 2px solid green; */
+    width: 110px;
+    font-size: 15px;
+}
+.exp-arrow{
+    background: #e03a3e;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: 200px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.exp-arrow img{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+@media (max-width: 1335px) {
+    .mainexp-universediv {
+        padding: 80px 40px; 
+        height: auto;        
+        min-height: 450px;
+    }
+    
+    .exp-universeheadpara {
+        width: 100%;       
+        max-width: 450px;   
+    }
+}
+
+@media (max-width: 768px) {
+    .mainexp-universediv {
+        padding: 50px 20px;
+        height: auto;        
+        min-height: 400px;
+        margin-top: 40px;
+        background-position: center;
+    }
+
+    .exp-universeheadpara {
+        width: 100%;
+        height: auto;        
+        text-align: center; 
+    }
+
+    .exp-universehead1 {
+        width: 100%;       
+    }
+
+    .exp-universehead1 h1 {
+        font-size: 26px;    
+    }
+
+    .exp-singupandarrow {
+        margin: 30px auto 0; 
+        justify-content: center;
+    }
+    
+    
+    body {
+        overflow-x: hidden;
+    }
+}
