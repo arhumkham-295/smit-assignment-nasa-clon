@@ -1349,7 +1349,7 @@ h2 {
     }
 
     .main-heading {
-        font-size: 30px; /
+        font-size: 30px; 
         margin-bottom: 20px;
     }
 
@@ -1363,5 +1363,179 @@ h2 {
 
     .image-side {
         margin-top: 10px;
+    }
+}
+.main-moretopicdiv{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.moretopichead{
+    /* border: 2px solid blue; */
+    font-size: 25px;
+    width: 1300px;
+    margin: 0 auto;
+}
+.main-topicimage1div{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 1300px;
+    height: 450px;
+    margin: 40px auto;
+}
+.main-topicimage2div{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 1300px;
+    height: 450px;
+    margin: 30px auto;
+}
+.topic-images1{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image25.jpeg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images2{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./WhatsApp\ Image\ 2026-05-04\ at\ 1.09.30\ PM.jpeg');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images3{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image27.jpeg');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images4{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image28.jpeg');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images5{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image29.webp');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images6{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image26.webp');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images7{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image31.webp');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-images8{
+    /* border: 2px solid blue; */
+    width: 300px;
+    height: 450px;
+    background-image : url('./image32.webp');
+     background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.topic-headarrow{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 200px;
+    margin: 350px 25px;
+    
+}
+.topichead{
+    /* border: 2px solid blue; */
+    width: auto;
+    color: #ffffff;
+    font-size: 15px;
+}
+.topicarrow {
+    display: inline-block;
+    background-color: #ff3b3b; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.topicarrow img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}
+
+@media (max-width: 1335px) {
+    .moretopichead, 
+    .main-topicimage1div, 
+    .main-topicimage2div {
+        width: 90%; 
+    }
+
+    [class^="topic-images"] {
+        width: 48%; 
+        margin-bottom: 20px;
+    }
+
+    .main-topicimage1div, 
+    .main-topicimage2div {
+        flex-wrap: wrap; 
+        height: auto;  
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main-topicimage1div, 
+    .main-topicimage2div {
+        flex-direction: column; 
+        align-items: center;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    [class^="topic-images"] {
+        width: 100%;    
+        max-width: 350px; 
+        margin-bottom: 15px;
+    }
+
+    .moretopichead {
+        width: 95%;
+        text-align: center;
+    }
+
+    .topic-headarrow {
+        margin: 350px auto 20px auto;
     }
 }
