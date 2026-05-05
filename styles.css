@@ -464,6 +464,7 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 
@@ -484,7 +485,8 @@ input{
 }
 
 .card-small-bottom {
-    background-image: url('./image4.webp');
+    background-image: url('./image4.webp'); 
+    
 }
 
 .category-name {
@@ -499,7 +501,10 @@ input{
     margin-bottom: 5px;
     color: #ccc;
 }
-
+.contant-headh2{
+    color: #ffffff;
+    font-size: 17px;
+}
 h2 {
     font-size: 1.2rem;
     line-height: 1.3;
