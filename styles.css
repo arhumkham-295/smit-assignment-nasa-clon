@@ -1495,7 +1495,7 @@ h2 {
     
 }
 
-@media (max-width: 1335px) {
+@media only screen and (max-width: 1335px) {
     .moretopichead, 
     .main-topicimage1div, 
     .main-topicimage2div {
@@ -1515,7 +1515,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .main-topicimage1div, 
     .main-topicimage2div {
         flex-direction: column; 
@@ -1537,5 +1537,250 @@ h2 {
 
     .topic-headarrow {
         margin: 350px auto 20px auto;
+    }
+}
+.nasa-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 40px 20px 40px;
+    margin-top: 70px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.footer-brand {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.mission-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.join-us {
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-arrow {
+    background-color: #e03c31; 
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.footer-arrow img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Links Section */
+.footer-links {
+    display: flex;
+    gap: 60px;
+    flex: 2;
+    margin: 100px 60px;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.live-tag {
+    border: 1px solid red;
+    font-size: 10px;
+    padding: 1px 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin-top:  100px;
+    margin-left: 30px;
+   
+}
+
+.footer-social h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    background-color: #333;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.social-icons img{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+.more-social, .newsletters {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.legal-links a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.page-info {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.page-info strong {
+    color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 1335px) {
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        flex: 1; 
+        margin: 40px 0; 
+        gap: 30px;
+    }
+
+    .footer-social {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nasa-footer {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .footer-brand, .footer-social {
+        min-width: 100%;
+        text-align: left;
+    }
+
+    .footer-links {
+        flex-direction: column; 
+        margin: 20px 0;
+        gap: 25px;
+    }
+
+    .link-column {
+        gap: 10px;
+    }
+
+    .legal-links {
+        flex-direction: column; 
+        gap: 12px;
+    }
+
+    .page-info {
+        flex-direction: column; 
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        justify-content: flex-start; 
     }
 }
