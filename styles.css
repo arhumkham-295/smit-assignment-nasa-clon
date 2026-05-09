@@ -590,52 +590,66 @@ h2 {
 
 
 @media only screen and (max-width: 768px) {
+    /* Main Container */
     .mainfeaturednews {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px !important;
+        box-sizing: border-box; /* Padding ko width ke andar rakhne ke liye */
     }
 
-    
+    /* Header Section */
     .mfeaturedhead {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
+        display: flex !important; /* Ensure flex is active */
+        flex-direction: column !important;
+        height: auto !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 15px !important;
     }
 
+    /* Alignment Fixes */
     .featuredhead, .mainrecentlypara {
-        margin: 0 auto;
-        justify-content: center;
+        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
     }
 
-   
+    /* News Cards Container */
     .news-container {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        align-items: center !important;
+        width: 100% !important;
     }
 
+    /* Individual Card */
     .card {
-        width: 95%; 
-        height: 300px;
-        margin-bottom: 10px;
+        width: 95% !important; 
+        height: auto !important; /* 300px fix karne se content cut sakta hai, auto behtar hai */
+        min-height: 300px;
+        margin-bottom: 20px !important;
     }
 
+    /* Overlay Text */
     .overlay {
-        align-items: center; 
-        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important; 
+        text-align: center !important;
     }
 
-    
+    /* Circle/Icon Div */
     .m-featured-circlediv {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-left: 0 !important;
     }
-
+}
     .circleand-paradiv {
         flex-direction: column; 
         align-items: center;
@@ -652,7 +666,7 @@ h2 {
     .circle-head {
         font-size: 18px;
     }
-}
+
 .connecting-div{
     border: 2px solid black;
     background-image:url('./xraydot-illus-e1777486392216.webp') ;
